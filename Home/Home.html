@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Alson Apartments" data-ar="الالسن للعقارات">Alson Apartments</title>
+    <link rel="icon" type="image/x-icon" href="/Images/ProjectLogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Home/Home.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/Home/Home.html">
+                <img src="/Images/ProjectLogo.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px;">
+                <span data-en="Alson Apartments" data-ar="الالسن للعقارات">Alson Apartments</span>
+            </a>
+            <div class="navbar-nav ms-auto" id="navbar-nav">
+                <!-- سيتم تحديث المحتوى هنا بواسطة JavaScript -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Image Section -->
+    <div class="hero-section">
+        <div class="container text-center text-light">
+            <h1 data-en="Find Your Dream Home" data-ar="ابحث عن منزل أحلامك">Find Your Dream Home</h1>
+            <p data-en="Buy or Rent the best properties in town" 
+               data-ar="شراء أو استئجار أفضل العقارات في المدينة">Buy or Rent the best properties in town</p>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <h1 class="text-center" data-en="Alson Apartments" data-ar="الالسن للعقارات">Alson Apartments</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <select class="form-control custom-select" id="governorate-select">
+                            <option value="">Select Governorate</option>
+                            <option value="cairo" data-en="Cairo" data-ar="القاهرة">Cairo</option>
+                            <option value="giza" data-en="Giza" data-ar="الجيزة">Giza</option>
+                            <option value="alex" data-en="Alexandria" data-ar="الاسكندرية">Alexandria</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control custom-select" id="district-select" disabled>
+                            <option value="">Select District</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control custom-select" id="street-select" disabled>
+                            <option value="">Select Street</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="apartment-list"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 data-en="About Us" data-ar="معلومات عنا">About Us</h5>
+                    <p data-en="We provide the best solutions for selling and renting apartments across Cairo." 
+                       data-ar="نقدم أفضل الحلول لبيع وتأجير الشقق في القاهرة.">We provide the best solutions for selling and renting apartments across Cairo.</p>
+                    <img src="/Images/ProjectLogo.png" alt="Logo" style="width: 60px; height: 60px;">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/Home/Home.html" class="text-light" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="/Login/Login.html" class="text-light" data-en="Login" data-ar="تسجيل الدخول">Login</a></li>
+                        <li><a href="/Register/Register.html" class="text-light" data-en="Register" data-ar="تسجيل">Register</a></li>
+                        <li><a href="/Login/Login.html" class="text-light" data-en="Admin" data-ar="الإدارة">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li data-en="Phone: +20 123 456 7890" data-ar="هاتف: +20 120 298 2836">Phone: +20 120 298 2836</li>
+                        <li data-en="Email: info@apartmentrental.com" data-ar="بريد إلكتروني: info@apartmentrental.com">Email: info@apartmentrental.com</li>
+                        <li data-en="Address: 123 Cairo St, Cairo, Egypt" data-ar="العنوان: 123 شارع القاهرة، القاهرة، مصر">Address: 123 Cairo St, Cairo, Egypt</li>
+                    </ul>
+                    <div class="social-icons mt-3">
+                        <a href="https://facebook.com" target="_blank" class="text-light me-3" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank" class="text-light me-3" aria-label="X">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/201234567890" target="_blank" class="text-light" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p data-en="© 2025 Apartment Rental. All rights reserved." 
+                   data-ar="© 2025 تأجير الشقق. جميع الحقوق محفوظة.">© 2025 Apartment Rental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="/Home/Home.js"></script>
+    <script src="/Language.js"></script>
+</body>
+</html>

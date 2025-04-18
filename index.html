@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-en="Selling & Renting Apartments" data-ar="بيع - تأجير الشقق">الالسن للعقارات</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    #loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #3498db;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 1s ease, visibility 1s ease;
+    }
+
+    #loader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .logo-wrapper svg {
+      width: 70px;
+      height: 70px;
+      fill: #ffffff;
+      animation: grow 1.8s ease-in-out infinite;
+    }
+
+    .loader-text {
+      font-size: 1.2rem;
+      color: #ffffff;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    @keyframes grow {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.85;
+      }
+    }
+
+    #home {
+      opacity: 0;
+      transition: opacity 1s ease;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    #home.visible {
+      opacity: 1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="logo-wrapper">
+      <!-- Apartment SVG icon (clean & geometric) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <path d="M4 60V8l12-4 12 4v52h-8V32H12v28H4zm32 0V24l12-4 12 4v36h-8V32H44v28h-8z"/>
+      </svg>
+      <div class="loader-text">مرحباً بك في موقع الالسن للعقارات</div>
+      <div class="loader-text">جاري تحميل الصفحة ...</div>
+    </div>
+  </div>
+
+
+
+  <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        const loader = document.getElementById("loader");
+        loader.classList.add("fade-out");
+  
+        // Wait for fade-out animation to finish before redirecting
+        setTimeout(() => {
+          window.location.href = "/Home/Home.html";
+        }, 500); // Match this to your CSS transition duration
+      }, 5000);
+    });
+  </script>
+  
+  
+
+</body>
+</html>

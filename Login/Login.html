@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Login - Selling & Renting Apartments" data-ar="تسجيل الدخول - بيع وتأجير الشقق">Login - Selling & Renting Apartments</title>
+    <link rel="icon" type="image/x-icon" href="/Images/ProjectLogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="/Login/Login.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/Home/Home.html">
+                <img src="/Images/ProjectLogo.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px;">
+                <span data-en="Alson Apartments" data-ar="الالسن للعقارات">Alson Apartments</span>
+            </a>
+            <div class="navbar-nav">
+                <button class="lang-btn btn btn-outline-secondary" onclick="toggleLanguage()">AR</button>
+                <a class="nav-link" href="/Login/Login.html" data-en="Login" data-ar="تسجيل الدخول">Login</a>
+                <a class="nav-link" href="/Register/Register.html" data-en="Register" data-ar="تسجيل حساب جديد">Register</a>
+                <a class="nav-link" href="/Login/Login.html" data-en="Admin" data-ar="الإدارة">Admin</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h2 class="text-center mb-4" data-en="Login" data-ar="تسجيل الدخول">Login</h2>
+                        <form id="login-form">
+                            <div class="mb-3">
+                                <label for="email" class="form-label" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label" data-en="Password" data-ar="كلمة المرور">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" data-en="Login" data-ar="تسجيل الدخول">Login</button>
+                        </form>
+                        <p class="text-center mt-3">
+                            <span data-en="Don't have an account?" data-ar="ليس لديك حساب؟">Don't have an account?</span>
+                            <a href="/Register/Register.html" data-en="Register here" data-ar="سجل هنا">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer Section -->
+     <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 data-en="About Us" data-ar="معلومات عنا">About Us</h5>
+                    <p data-en="We provide the best solutions for selling and renting apartments across Cairo." 
+                       data-ar="نقدم أفضل الحلول لبيع وتأجير الشقق في القاهرة.">We provide the best solutions for selling and renting apartments across Cairo.</p>
+                    <img src="/Images/ProjectLogo.png" alt="Logo" style="width: 60px; height: 60px;">
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="login.html" class="text-light" data-en="Login" data-ar="تسجيل الدخول">Login</a></li>
+                        <li><a href="register.html" class="text-light" data-en="Register" data-ar="تسجيل">Register</a></li>
+                        <li><a href="admin.html" class="text-light" data-en="Admin" data-ar="الإدارة">Admin</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 data-en="Contact Us" data-ar="تواصل معنا"></h5>
+                    <ul class="list-unstyled">
+                        <li data-en="Phone : +20 123 456 7890" data-ar="هاتف : +20 120 298 2836">Phone : +20 120 298 2836</li>
+                        <li data-en="Email : info@apartmentrental.com" data-ar="بريد إلكتروني : info@apartmentrental.com">Email : info@apartmentrental.com</li>
+                        <li data-en="Address : 123 Cairo St, Cairo, Egypt" data-ar="العنوان : 123 شارع القاهرة، القاهرة، مصر">Address : 123 Cairo St, Cairo, Egypt</li>
+                    </ul>
+                    <!-- Social Media Icons -->
+                    <div class="social-icons mt-3">
+                        <a href="https://facebook.com" target="_blank" class="text-light me-3" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank" class="text-light me-3" aria-label="X">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/201234567890" target="_blank" class="text-light" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p data-en="&copy; 2025 Apartment Rental. All rights reserved." 
+                   data-ar="&copy; 2025 تأجير الشقق. جميع الحقوق محفوظة.">&copy; 2025 Kerolos Fayez. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Language.js"></script>
+    <script src="/Login/Login.js"></script>
+</body>
+</html>
