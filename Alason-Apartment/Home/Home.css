@@ -1,0 +1,267 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    margin-left: auto; /* يمين في LTR */
+    margin-right: 0;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.lang-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('/Images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* Apartment Card Styling */
+.apartment-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apartment-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.apartment-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    min-height: 220px;
+    max-height: 220px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.apartment-card .card-body {
+    padding: 25px;
+}
+
+.apartment-card .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+.apartment-card .card-text {
+    color: #718096;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.apartment-card .btn-primary {
+    background: linear-gradient(90deg, #3182ce, #63b3ed);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease;
+}
+
+.apartment-card .btn-primary:hover {
+    background: linear-gradient(90deg, #2b6cb0, #4299e1);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #2d3748;
+    color: #e2e8f0;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #63b3ed;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #63b3ed;
+}
+
+/* Custom Select Styling */
+.custom-select {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: #2d3748;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    width: 100%;
+}
+
+.custom-select:not(.rtl) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23718096' viewBox='0 0 16 16'%3E%3Cpath d='M8 12l-6-6h12z'/%3E%3C/svg%3E");
+}
+
+.custom-select.rtl {
+    direction: rtl;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23718096' viewBox='0 0 16 16'%3E%3Cpath d='M8 12l-6-6h12z'/%3E%3C/svg%3E");
+    background-position: left 15px center;
+}
+
+.custom-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.custom-select:disabled {
+    background-color: #f8f9fa;
+    color: #718096;
+    cursor: not-allowed;
+}
+
+.custom-select option {
+    color: #2d3748;
+    background-color: #ffffff;
+}
+
+.custom-select:hover:not(:disabled) {
+    border-color: #63b3ed;
+}
+
+/* RTL Adjustments */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .navbar-nav {
+    margin-left: 0; /* الـ links تروح شمال في العربي */
+    margin-right: auto;
+}
+
+body.rtl .nav-link {
+    margin-left: 0;
+    margin-right: 15px; /* المسافة بين الـ links من اليمين */
+}
+
+body.rtl .lang-btn {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+body.rtl .navbar-brand img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+body.rtl .footer ul,
+body.rtl .footer p,
+body.rtl .footer h5 {
+    text-align: right;
+}
+
+body.rtl .social-icons {
+    text-align: right;
+}
+
+body.rtl .social-icons a {
+    margin-left: 15px;
+    margin-right: 0;
+}
